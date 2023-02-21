@@ -6,7 +6,7 @@ public class Main {
 
     public static void main(String[] args) {
 
-        ClassPathXmlApplicationContext context =
+        /*ClassPathXmlApplicationContext context =
                 new ClassPathXmlApplicationContext("applicationContext.xml");
         ClassPathXmlApplicationContext context2 =
                 new ClassPathXmlApplicationContext("applicationContext2.xml");
@@ -30,7 +30,22 @@ public class Main {
 
         context.close();
         context2.close();
-        context3.close();
+        context3.close();*/
 
+        ClassPathXmlApplicationContext context =
+                new ClassPathXmlApplicationContext("applicationContext4.xml");
+
+        Transport moto1  = context.getBean("moto", Moto.class);
+        Transport moto2 = context.getBean("moto", Moto.class);
+        System.out.println(moto1 == moto2);
+        System.out.println(moto1);
+        System.out.println(moto2);
+
+        moto1.go();
+
+        Person person = context.getBean("person", Person.class);
+        person.sit();
+
+        context.close();
     }
 }
