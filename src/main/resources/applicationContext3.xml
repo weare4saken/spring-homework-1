@@ -8,7 +8,7 @@
     http://www.springframework.org/schema/context/spring-context.xsd">
 
     <bean id="customCar"
-          class="weare4saken.Car"
+          class="weare4saken.model.Car"
           scope="prototype">
     </bean>
 

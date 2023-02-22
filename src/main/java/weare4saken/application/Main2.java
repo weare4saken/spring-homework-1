@@ -1,7 +1,11 @@
-package weare4saken;
+package weare4saken.application;
 
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
+import weare4saken.service.Transport;
+import weare4saken.config.Config;
+import weare4saken.model.Car;
+import weare4saken.model.Person;
 
 public class Main2 {
 

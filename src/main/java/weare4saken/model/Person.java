@@ -1,8 +1,9 @@
-package weare4saken;
+package weare4saken.model;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;
+import weare4saken.service.Transport;
 
 @Component
 public class Person {

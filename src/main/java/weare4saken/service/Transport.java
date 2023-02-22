@@ -1,4 +1,4 @@
-package weare4saken;
+package weare4saken.service;
 
 public interface Transport {
      void go();

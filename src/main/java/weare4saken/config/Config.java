@@ -1,4 +1,4 @@
-package weare4saken;
+package weare4saken.config;
 
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;

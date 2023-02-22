@@ -1,6 +1,9 @@
-package weare4saken;
+package weare4saken.application;
 
 import org.springframework.context.support.ClassPathXmlApplicationContext;
+import weare4saken.service.Transport;
+import weare4saken.model.Moto;
+import weare4saken.model.Person;
 
 public class Main {
 
