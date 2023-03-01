@@ -7,13 +7,6 @@
     http://www.springframework.org/schema/context
     http://www.springframework.org/schema/context/spring-context.xsd">
 
-    <bean id="customCar"
-          class="weare4saken.model.Car">
-    </bean>
-
-    <bean id="customPerson"
-          class="weare4saken.model.Person">
-        <property name="car" ref="customCar"/>
-    </bean>
+    <context:component-scan base-package="weare4saken"/>
 
 </beans>
